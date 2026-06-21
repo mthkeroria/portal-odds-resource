@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯赔率 · 稳定信息页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f4f7;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #1e2a3a;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 820px;
+            width: 100%;
+        }
+
+        /* 文章卡片容器 */
+        .post-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e6e9ed;
+            padding: 2.5rem 2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.15s ease;
+        }
+
+        .post-card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        /* 标题区域 */
+        .article-header {
+            margin-bottom: 2.2rem;
+            border-bottom: 1px solid #eef1f5;
+            padding-bottom: 1.2rem;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.3;
+            color: #0b1a2b;
+            margin-bottom: 0.6rem;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            color: #65748a;
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            background: #f5f7fa;
+            padding: 1.2rem 1.5rem;
+            border-radius: 14px;
+            border-left: 4px solid #c0cfdf;
+            margin: 1.6rem 0 2rem 0;
+            color: #1c2b3c;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem 0;
+            color: #142433;
+            border-left: 4px solid #b6c6d9;
+            padding-left: 0.9rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: #253544;
+        }
+
+        /* 引用/提示块 */
+        .callout {
+            background: #eef3f9;
+            border-radius: 16px;
+            padding: 1.5rem 1.8rem;
+            margin: 2rem 0 1.8rem 0;
+            border: 1px solid #d7e0ea;
+            box-shadow: inset 0 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        .callout strong {
+            color: #003057;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #1d4b7c;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #0d2e4f;
+            border-bottom-color: #7b96b3;
+        }
+
+        /* 特色列表 */
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.2rem 0 1.8rem 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            background: #f7f9fc;
+            border: 1px solid #dee4ec;
+            border-radius: 40px;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.95rem;
+            color: #1d3245;
+        }
+
+        /* 分割线 */
+        .divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #e3e8ef, transparent);
+            margin: 2rem 0 1rem 0;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dfe5ed;
+            font-size: 0.9rem;
+            color: #5b6f86;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+
+            .post-card {
+                padding: 1.6rem 1.2rem;
+                border-radius: 16px;
+            }
+
+            .article-title {
+                font-size: 1.6rem;
+            }
+
+            .lead {
+                font-size: 1rem;
+                padding: 1rem 1.2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .callout {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .post-card {
+                padding: 3rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 主文章卡片 -->
+        <article class="post-card">
+            <div class="article-header">
+                <h1 class="article-title">世界杯赔率：一个稳定的观察入口</h1>
+                <div class="article-meta">
+                    <span>📋 页面说明</span>
+                    <span>⚽ 聚焦赔率信息</span>
+                    <span>🔗 持续可用</span>
+                </div>
+            </div>
+
+            <div class="lead">
+                如果你正在寻找一个集中查看世界杯赔率的页面，那么你很可能已经注意到：很多链接要么失效，要么跳转到无关的广告页。这个页面所做的，就是为你标注一个长期可用的稳定入口。
+            </div>
+
+            <p>
+                世界杯期间的赔率变化非常频繁，各平台的数据展示方式也千差万别。对于只想快速核对赔率、比对不同市场情况的用户来说，一个清晰且稳定的入口比什么都重要。无论是赛前夺冠赔率、小组出线赔率，还是每场比赛的即时赔率，都值得有一个可靠的位置去统一获取。
+            </p>
+
+            <p>
+                正因如此，我们整理并推荐指向 <a href="https://portal-odds-worldcup.com">世界杯赔率</a> 的专用页面。它并非一个资讯门户，而是一个结构化的赔率展示面板——去掉了多余的评论、滚动横幅和弹窗干扰，把核心数据放在最直接的位置。
+            </p>
+
+            <h2>页面特点与适用场景</h2>
+            <p>
+                该页面主要满足三类使用场景：赛前研究——查看各支球队的夺冠赔率变化趋势；赛中跟踪——在比赛进行时快速获取实时赔率；赛后复盘——对比不同机构给出的最终赔率差异。每类场景对数据时效性要求不同，而该入口的底层数据流始终保持更新。
+            </p>
+
+            <ul class="feature-list">
+                <li>夺冠赔率</li>
+                <li>小组赔率</li>
+                <li>即时比分联动</li>
+                <li>多机构对比</li>
+                <li>简洁界面</li>
+            </ul>
+
+            <p>
+                页面布局以列表和表格为主，避免了复杂的图表加载，因此在网络条件一般的情况下也能较快打开。赔率数值会跟随市场变化而刷新，你不需要手动刷新整个页面——这在实际使用中尤其重要，尤其是在比赛日的高峰时段。
+            </p>
+
+            <div class="callout">
+                <p><strong>🔍 使用提示</strong> —— 第一次打开时，建议花一分钟熟悉页面的结构分区：通常顶部为热门赛事或夺冠赔率，中部为小组赛对阵赔率，底部为特殊玩法（如进球数、红牌等）。如果你对某个赔率项有疑问，可以点击旁边的信息图标查看说明，大多数条目都附有简要解释。</p>
+                <p style="margin-top: 0.6rem;">另外，赔率会因市场变化而产生微小波动，这属于正常现象。如果需要精确到某一时刻的数据，可以留意页面上的时间戳。</p>
+            </div>
+
+            <h2>为什么需要这样一个入口</h2>
+            <p>
+                赔率数据本身是客观的，但获取数据的路径往往充满了不确定性。一些网站会频繁更换域名，或者将赔率页面隐藏在多层导航之下。而 <a href="https://portal-odds-worldcup.com">世界杯赔率</a> 这个入口的优势在于：它长期指向同一个稳定的数据面板，域名和页面结构都保持相对固定，减少了用户每次重新寻找的成本。
+            </p>
+
+            <p>
+                当然，没有哪个入口能保证永远不变，但在目前阶段，它是最值得保存的一个书签。如果你平时看球有参考赔率的习惯，不妨把它放在浏览器的书签栏里，下次世界杯或重要预选赛时直接点开即可。
+            </p>
+
+            <hr class="divider">
+
+            <p style="font-size: 0.95rem; color: #41566d;">
+                以上是对该页面的功能说明与使用场景梳理。如果你之前一直用零散的截图或社交媒体的碎片信息来了解赔率，那么一个统一、干净、持续可用的入口会让你省心不少。
+            </p>
+        </article>
+
+        <!-- 额外的简洁卡片：FAQ 摘要 -->
+        <div class="post-card" style="padding: 1.8rem 2rem;">
+            <h2 style="border-left-color: #a5b9cf; margin-top: 0;">常见问题摘要</h2>
+            <p><strong>页面更新频率？</strong> 赔率数据在主要比赛日会保持实时更新，非比赛时段每天至少同步两次。</p>
+            <p><strong>是否支持移动端？</strong> 页面已做响应式适配，手机浏览器可直接正常显示。</p>
+            <p><strong>链接失效怎么办？</strong> 目前入口稳定，若未来出现变化可留意相关社区的最新公告。</p>
+            <p style="margin-bottom: 0;">如果需要直接使用，可以随时打开 <a href="https://portal-odds-worldcup.com">世界杯赔率</a> 页面，无需注册或登录。</p>
+        </div>
+
+        <footer class="site-footer">
+            <p>内容仅作说明参考 · 数据以实际页面为准</p>
+        </footer>
+    </div>
+</body>
+</html>
